@@ -49,7 +49,7 @@ export const addTodoAction = (todo) => ({
     payload: todo
 });
 
-export const tggleTodoAction = todoId => ({
+export const toggleTodoAction = todoId => ({
     type: 'TOGGLE_TODO',
     payload: todoId
 })

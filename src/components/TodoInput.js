@@ -20,6 +20,7 @@ export default () => {
             name: todo,
             complete: false
         })
+        setTodo('');
     }
     return (
         <form onSubmit={onSubmit}>
