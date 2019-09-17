@@ -19,7 +19,7 @@ const initialState = {
 export const store = createStore(
     reducer,
     initialState,
-    window.devToolsExtension && window.devToolsExtension
+    window.devToolsExtension && window.devToolsExtension()
 );
 
 function reducer(state, {type, payload}) {
@@ -54,7 +54,7 @@ export const tggleTodoAction = todoId => ({
     payload: todoId
 })
 
-export const deleteTodoAction = todoId ({
+export const deleteTodoAction = todoId => ({
     type: 'DELETE_TODO',
     payload: todoId
 })
